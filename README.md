@@ -1,5 +1,7 @@
 # Calculadora Castellera :tada::raising_hand_woman::sparkles:
 Petita aplicació web que permet calcular el pes total d'un castell en funció del seu tipus o a partir de les dades introduïdes manualment.
+<br/></br>
+Accedeix aquí per provar-la: [https://darosa01.github.io/CalculadoraCastellers/](https://darosa01.github.io/CalculadoraCastellers/)
 
 ## Funcionament
 Es pot utilitzar simplement accedint al fitxer 'index.html' des de qualsevol navegador. Com no té cap tipus de dependència, no és necessari disposar de connexió a Internet, i a més la seva mida és molt reduïda.
