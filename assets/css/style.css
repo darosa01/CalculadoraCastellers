@@ -1,0 +1,85 @@
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+input[type="checkbox"]{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+legend{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.caixa{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  height: 80vh;
+  padding: 0 2rem;
+  padding-bottom: 4rem;
+}
+
+.caixa-inputs{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  padding: 2rem;
+}
+
+.caixa-predefinits{
+  text-align: center;
+  background-color: gray;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.caixa-resultat{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: gray;
+  color: white;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+.grup-inputs{
+  display: grid;
+  grid-template-columns: 1fr 3fr 4fr;
+  align-items: center;
+}
+
+#imatge-castell{
+  height: 80vh;
+}
+
+#resultat{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+@media (max-width: 985px){
+  .caixa{
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0;
+  }
+
+  .caixa-inputs{
+    padding-bottom: 6rem;
+  }
+
+  .caixa-predefinits{
+    margin: 0;
+  }
+
+  #imatge-castell{
+    display: none;
+  }
+}

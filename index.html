@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/aplicacio.js"></script>
+
+  <title>Calculadora Castellers</title>
+</head>
+<body>
+  <div class="caixa-predefinits">
+    <label for="opcions-castells">Selecciona un castell: </label>
+    <select name="opcions-castells" id="opcions-castells" onchange="seleccioCastell()">
+      
+    </select>
+  </div>
+  <div class="caixa">
+    <div class="caixa-imatge">
+      <img src="assets/img/castell.jpg" id="imatge-castell">
+    </div>
+    <div class="caixa-inputs">
+      <div class="bloc-input">
+        <!-- <h2>Pom de dalt</h2> -->
+        <fieldset class="grup-inputs">
+          <legend>Pom de dalt</legend>
+          <input type="checkbox" id="check-pom" checked onchange="calcula()">
+          <div>
+            <span>Número de persones: </span>
+            <input type="number" min="0" max="100" id="numero-pom" onchange="calcula()">
+          </div>
+          <div>
+            <span>Mitjana de pes per persona (en kg): </span>
+            <input type="number" min="0" max="300" id="pes-pom" onchange="calcula()">
+          </div>
+        </fieldset>
+      </div>
+      <div class="bloc-input">
+        <!-- <h2>Tronc</h2> -->
+        <fieldset class="grup-inputs">
+          <legend>Tronc</legend>
+          <input type="checkbox" id="check-tronc" checked onchange="calcula()">
+          <div>
+            <span>Número de persones: </span>
+            <input type="number" min="0" max="100" id="numero-tronc" onchange="calcula()">
+          </div>
+          <div>
+            <span>Mitjana de pes per persona (en kg): </span>
+            <input type="number" min="0" max="300" id="pes-tronc" onchange="calcula()">
+          </div>
+        </fieldset>
+      </div>
+      <div class="bloc-input">
+        <!-- <h2>Manilles</h2> -->
+        <fieldset class="grup-inputs">
+          <legend>Manilles</legend>
+          <input type="checkbox" id="check-manilles" checked onchange="calcula()">
+          <div>
+            <span>Número de persones: </span>
+            <input type="number" min="0" max="100" id="numero-manilles" onchange="calcula()">
+          </div>
+          <div>
+            <span>Mitjana de pes per persona (en kg): </span>
+            <input type="number" min="0" max="300" id="pes-manilles" onchange="calcula()">
+          </div>
+        </fieldset>
+      </div>
+      <div class="bloc-input">
+        <!-- <h2>Folre</h2> -->
+        <fieldset class="grup-inputs">
+          <legend>Folre</legend>
+          <input type="checkbox" id="check-folre" checked onchange="calcula()">
+          <div>
+            <span>Número de persones: </span>
+            <input type="number" min="0" max="100" id="numero-folre" onchange="calcula()">
+          </div>
+          <div>
+            <span>Mitjana de pes per persona (en kg): </span>
+            <input type="number" min="0" max="300" id="pes-folre" onchange="calcula()">
+          </div>
+        </fieldset>
+      </div>
+      <div class="bloc-input">
+        <!-- <h2>Pinya</h2> -->
+        <fieldset class="grup-inputs">
+          <legend>Pinya</legend>
+          <input type="checkbox" id="check-pinya" checked onchange="calcula()">
+          <div>
+            <span>Número de persones: </span>
+            <input type="number" min="0" max="100" id="numero-pinya" onchange="calcula()">
+          </div>
+          <div>
+            <span>Mitjana de pes per persona (en kg): </span>
+            <input type="number" min="0" max="300" id="pes-pinya" onchange="calcula()">
+          </div>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+  <div class="caixa-resultat">
+    El pes total és: <span id="resultat"></span>kg
+  </div>
+</body>
+</html>
